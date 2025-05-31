@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Gatinho</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+
+        <h2>Adote um Gatinho</h2>
+        <a href="index.html"><img class="logo" src="imagens/logogato.jpg"></a>
+
+      </div>
+      <div class="mainnav">
+        <!--li é para montar lista-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem_somos.html">Quem Somos</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+            <li><a href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2>Trabalhe Conosco</h2>
+        <form name="fale_conosco" id="fale_conosco" onsubmit="msg();">
+          <fieldset class="grupo">
+          <fieldset>
+            <legend>Trabalhe Conosco</legend>
+            <br><br>
+            <label>Informe seu Nome: </label><br>
+            <input class="font_maior" type="text" name="nome" id="nome" maxlength="50" required><br>
+            <label>Informe o Telefone para Contato: </label><br>
+            <input class="font_maior" type="text" name="nome" id="nome" maxlength="50" required><br>
+            <label>Informe seu Email: </label><br>
+            <input class="font_maior" type="text" name="nome" id="nome" maxlength="50" required><br>
+            <br>
+            <label>Escolha uma Opção: </label>
+            <select name="Assunto" id="Assunto">
+            <option>Escolha uma Opção:</option>
+            <option>Quero ser Voluntário</option>
+            <option>Quero doar Alimentos ou Medicações</option>
+            <option>Resgate (deixe as informações no campos abaixo)</option>
+            <option>Elogios</option>
+            <option>Sugestões</option>
+          </select>
+          <br>
+          <label>Deixe seu Recado:</label>
+          <br>
+          <textarea class="cx_txt font_maior" name="recado" id="recado" rows="5" maxlength="200" required></textarea>
+          <br>
+          <input type="submit" name="enviar" id="enviar" value="ENVIAR">
+          <input type="reset" name="limpar" id="limpar" value="LIMPAR">
+        </fieldset>
+        </form>
+       <!--maxlength é para definir a quantidade de caracteres que pode digitar no campos-->
+        </br>
+        <p>Você ama gatos e quer fazer a diferença? 
+Estamos procurando voluntários apaixonados para nos ajudar na missão de resgatar, cuidar e encontrar lares amorosos para nossos gatinhos!
+Seja ajudando em eventos de adoção, divulgando nas redes sociais ou cuidando dos peludos, toda ajuda é bem-vinda.
+Junte-se a nós e faça parte de uma corrente do bem que transforma vidas — inclusive a sua!
+ </p>
+    </br>
+      <div class="footer">
+        <address>Entre em contato e transforme a vida de um gato (e a sua também).</address>
+      </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" language="javascript" src="funcao.js"></script>
